@@ -27,6 +27,7 @@ body {
   border-radius: 10px;
   border: solid 1px #000000aa;
   background-color: #00000020;
+
 }
 
 h1 {
@@ -35,4 +36,14 @@ h1 {
 
 p {
   font-size: 1.4rem;
+}
+
+.btn{
+  place-content: center;
+}
+
+.btn button{
+  padding: 10px;
+  background-color: #092e5c;
+  color: white;
 }
