@@ -1,6 +1,9 @@
 import { useState } from 'react'
 
 import { reverse } from './helpers'
+import { NameLength } from './components/NameLength'
+import { NameReversed } from './components/NameReversed'
+import { Title } from './components/Title'
 import './styles.css'
 
 export default function App() {
@@ -8,13 +11,9 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1 className="title">Welcome, {name}!</h1>
-      <p className="name-length">
-        Did you know that {name} is {name.length} characters long?!
-      </p>
-      <p className="name-reversed">
-        Also, {name} backwards is {reverse(name)}
-      </p>
+      <Title name={name}/>
+      <NameLength name={name} length={name.length}/>
+      <NameReversed name={name} fun={reverse(name)}/>
     </div>
   )
 }
