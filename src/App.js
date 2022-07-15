@@ -7,9 +7,17 @@ import { Title } from './components/Title'
 import './styles.css'
 
 export default function App() {
-  const [names] = useState(
-    ['Noemi', 'John', 'Richard', 'Ning', 'Lorel', 'Hubert', 'Michele', 'Steve', 'Gift', 'Mirkan', 'Delia', 'Tom', 'Sam']
-    )
+  const defaultNames =  [
+    'Noemi', 'John', 
+    'Richard', 'Ning', 
+    'Lorel', 'Hubert', 
+    'Michele', 'Steve', 
+    'Gift', 'Mirkan', 
+    'Delia', 'Tom', 
+    'Sam'
+  ]
+
+  const [names] = useState(defaultNames)
   const [name, setName] = useState('Nicolas')
 
   const onClickChange = () => {
